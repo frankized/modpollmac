@@ -1,3 +1,4 @@
+### Run modpoll on a mac with docker
 ### Build and Run Instructions
 
 1. **Save the Dockerfile and `entrypoint.sh` in the same directory.**
