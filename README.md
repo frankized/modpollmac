@@ -21,4 +21,10 @@ If you have a Modbus TCP device available on the host with IP address `192.168.1
 docker run -it --rm --network host modpoll-alpine -m tcp -a 1 -r 100 -t 4:hex 192.168.1.100
 ```
 
+If you have a Modbus TCP server available on the host machine and you want to query register 100:
+
+```sh
+docker run -it --rm --network host modpoll-alpine -m tcp -a 1 -r 100 -t 4:hex 127.0.0.1
+```
+
 This configuration ensures that `CTRL+C` will immediately terminate the container, thanks to `tini` handling the signals correctly.
